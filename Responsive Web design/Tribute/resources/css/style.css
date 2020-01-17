@@ -10,6 +10,7 @@
 /*-----------------*/
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -136,3 +137,49 @@ header {
 .fa-grunt {
   color: #246a30;
 }
+
+/*------------------*/
+/*------Image-Container-----*/
+/*-----------------*/
+.image-container {
+  padding: 0 40px;
+}
+.img-res img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+#image {
+  opacity: 0.6;
+  transition: opacity 1.5s;
+}
+#image:hover {
+  opacity: 1;
+}
+.img-res {
+  margin: 0 20%;
+}
+#img-caption {
+  text-align: center;
+  font-size: 65%;
+}
+/*------------------*/
+/*------Footer-Container-----*/
+/*-----------------*/
+.tribute-container {
+  padding: 20px 40px;
+  text-align: center;
+  height: 100px;
+  background-color: rgb(235, 238, 236);
+}
+#tribute-link {
+  text-align: center;
+  padding: 20px;
+}
+h6 {
+  font-size: 150%;
+}
+
+/*------------------*/
+/*---Media Queries--*/
+/*------------------*/
