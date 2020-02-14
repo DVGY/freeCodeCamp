@@ -159,3 +159,86 @@ img {
 #tribute-link:active {
   color: #967f4a;
 }
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 1.5rem;
+  }
+  .container {
+    margin-bottom: 3rem;
+  }
+  .main-heading {
+    margin-bottom: 4rem;
+  }
+  .main-heading--main {
+    font-size: 4.5rem;
+    padding: 0 0.8rem;
+    letter-spacing: 30px;
+  }
+  .main-heading--sub {
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+  }
+  .hero-img {
+    padding: 0.8rem 1.5rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    /* border: 3px solid yellow; */
+  }
+  .hero-forest {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 1.2rem;
+  }
+  .container {
+    margin-bottom: 2.5rem;
+  }
+  .main-heading {
+    margin-bottom: 3.5rem;
+  }
+  .main-heading--main {
+    font-size: 3rem;
+    padding: 0 0.8rem;
+    letter-spacing: 25px;
+  }
+  .main-heading--sub {
+    font-size: 1rem;
+    letter-spacing: 6px;
+  }
+  .hero-img {
+    padding: 0.8rem 1.5rem;
+  }
+  .hero-forest {
+    border-radius: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body {
+    padding: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .hero-text {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .hero-img {
+    padding: 1rem 2rem;
+  }
+  .hero-forest {
+    height: 50%;
+    width: 50%;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+}
