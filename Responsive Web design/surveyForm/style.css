@@ -1,0 +1,192 @@
+:root {
+  --primary-color: #d529a2;
+  --primary-color-light: #de53b5;
+  --primary-color-dark: #801861;
+  --invalid-focus-color: #fa6f4f;
+  --valid-focus-color: #159f47;
+  --margin-bottom-smallest: 0;
+  --margin-bottom-small: 0.8rem;
+  --margin-bottom-medium: 1.5rem;
+  --margin-bottom-large: 2rem;
+  --margin-bottom-largest: 3rem;
+  --default-font-size: 1.6rem;
+  --heading-font-size: 4.8rem;
+  --subheading-font-size: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcf9f8;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+#title {
+  font-size: var(--heading-font-size);
+  margin-bottom: var(--margin-bottom-smallest);
+}
+#description {
+  font-size: var(--subheading-font-size);
+  margin-bottom: var(--margin-bottom-large);
+}
+.form-container {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-color-dark),
+    var(--primary-color-light)
+  );
+  padding: 2.5rem;
+}
+.form {
+  padding: 1rem;
+}
+
+#survey-form-group:not(:last-child) {
+  margin-bottom: var(--margin-bottom-large);
+}
+
+/* Input and label for NAME EMAIL and AGE */
+.form__input {
+  font-size: var(--default-font-size);
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  display: block;
+  border: 0;
+  width: 100%;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+.form__input:focus {
+  outline: none;
+  border-bottom: 3px solid var(--valid-focus-color);
+  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+.form__input:focus:invalid {
+  border-bottom: 3px solid var(--invalid-focus-color);
+}
+.form__input::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+.form__label {
+  font-size: var(--default-font-size);
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  transition: all 0.3s;
+  display: block;
+}
+/* Works only is the label comes after input */
+/* .form__input:placeholder-shown .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4rem);
+} */
+
+/* Form Select option  */
+.form__select-label {
+  display: block;
+  font-size: var(--default-font-size);
+  font-weight: 700;
+  margin-bottom: var(--margin-bottom-small);
+}
+
+.form__select {
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+  font-size: var(--default-font-size);
+  outline: none;
+  border: 1px solid transparent;
+}
+/* .form__select-input {
+  font-size: 2rem;
+} */
+
+.form__select:focus {
+  border: 1px solid var(--valid-focus-color);
+  outline: var(--valid-focus-color);
+}
+/* FORM radio button */
+h3 {
+  font-size: var(--default-font-size);
+  margin-bottom: var(--margin-bottom-small);
+}
+.form__radio-group {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: var(--margin-bottom-small);
+}
+.form__radio-label {
+  font-size: var(--default-font-size);
+  cursor: pointer;
+  padding-left: 1rem;
+}
+/* Form Checkbox  */
+.form__checkbox-group {
+  margin-bottom: var(--margin-bottom-small);
+  display: inline-block;
+  width: 100%;
+}
+.form__checkbox-label {
+  font-size: var(--default-font-size);
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+/* Form text area */
+
+.form__textarea-group {
+}
+.form__textarea-label {
+  font-size: var(--default-font-size);
+  font-weight: 700;
+  display: block;
+  margin-bottom: var(--margin-bottom-small);
+}
+.form__textarea-input {
+  border: 2px solid transparent;
+  width: 100%;
+  transition: all 0.3s;
+}
+.form__textarea-input:focus {
+  border: 2px solid var(--valid-focus-color);
+  outline: none !important;
+  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.1);
+}
+/* Button */
+.btn {
+  text-transform: capitalize;
+  padding: 1rem 4rem;
+  border-radius: 10rem;
+  font-size: var(--default-font-size);
+  outline: none;
+  border: none;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.btn:active,
+.btn:focus {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn--purple {
+  background-color: var(--primary-color-dark);
+  color: #fff;
+}

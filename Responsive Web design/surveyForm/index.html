@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey | Clinical Trial</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="#" id="survey-form" class="form">
+        <div class="form__title">
+          <h1 id="title">Survey Form</h1>
+          <p id="description">Clinical Trial survey</p>
+        </div>
+
+        <div id="survey-form-group" class="form__group">
+          <label id="name-label" for="name" class="form__label"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter you full name"
+            class="form__input"
+            required
+          />
+        </div>
+        <div id="survey-form-group" class="form__group">
+          <label id="email-label" for="email" class="form__label"
+            >Enter email</label
+          >
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter you email"
+            class="form__input"
+            required
+          />
+        </div>
+        <div id="survey-form-group" class="form__group">
+          <label id="number-label" for="number" class="form__label"
+            >Enter you age</label
+          >
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter your age"
+            min="12"
+            max="50"
+            class="form__input"
+            required
+          />
+        </div>
+        <div id="survey-form-group" class="form__group">
+          <label for="disease-type" class="form__select-label"
+            >Select your diagoinis type</label
+          >
+
+          <select name="disease" id="dropdown" class="form__select">
+            <option value="Select your type" class="form__select-option"
+              >Select your type</option
+            >
+            <option
+              value="Papillary Thyroid Carcinoma"
+              class="form__select-option"
+              >Papillary Thyroid Carcinoma</option
+            >
+            <option
+              value="Follicular Thyroid Carcinoma"
+              class="form__select-option"
+              >Follicular Thyroid Carcinoma</option
+            >
+            <option
+              value="Medullary Thyroid Carcinoma"
+              class="form__select-option"
+              >Medullary Thyroid Carcinoma</option
+            >
+          </select>
+        </div>
+        <!-- RADIO BUTTON -->
+        <div id="survey-form-group" class="form__group">
+          <h3>Select your risk type</h3>
+          <div class="form__radio-group">
+            <input
+              name="risk-type"
+              type="radio"
+              id="RAI-RF"
+              class="form__radio-input"
+              value="IodineR"
+            />
+            <label for="RAI-RF" class="form__radio-label"
+              >Iodine refractory</label
+            >
+          </div>
+          <div class="form__radio-group">
+            <input
+              name="risk-type"
+              type="radio"
+              id="RAI-RF-HIGH"
+              class="form__radio-input"
+              value="HRandIR"
+            />
+            <label for="RAI-RF-HIGH" class="form__radio-label"
+              >High Risk and Iodine Refractory</label
+            >
+          </div>
+
+          <div class="form__radio-group">
+            <input
+              name="risk-type"
+              type="radio"
+              id="RAI-MR"
+              class="form__radio-input"
+              value="MR"
+            />
+            <label for="RAI-MR" class="form__radio-label">Medium risk</label>
+          </div>
+          <div class="form__radio-group">
+            <input
+              name="risk-type"
+              type="radio"
+              id="RAI-LR"
+              class="form__radio-input"
+              value="LR"
+            />
+            <label for="RAI-LR" class="form__radio-label">Low risk</label>
+          </div>
+        </div>
+
+        <div id="survey-form-group" class="form__group">
+          <h3>Choose the treatment option</h3>
+
+          <div class="form__checkbox-group">
+            <input
+              type="checkbox"
+              id="trail"
+              value="clinical trail"
+              class="form__checkbox-input"
+            />
+            <label for="trail" class="form__checkbox-label"
+              >Clinical Trail</label
+            >
+          </div>
+          <div class="form__checkbox-group">
+            <input
+              type="checkbox"
+              id="lu-177"
+              value="lu 177 therapy"
+              class="form__checkbox-input"
+            />
+            <label for="lu-177" class="form__checkbox-label"
+              >lu 177-DOTA octreotate</label
+            >
+          </div>
+          <div class="form__checkbox-group">
+            <input
+              type="checkbox"
+              id="RAI"
+              value="Radio active iodine"
+              class="form__checkbox-input"
+            />
+            <label for="RAI" class="form__checkbox-label"
+              >radio active iodine</label
+            >
+          </div>
+        </div>
+
+        <div id="survey-form-group" class="form__group">
+          <label class="form__textarea-label"
+            >Any comments or description or questions ?</label
+          >
+          <textarea
+            type="textarea"
+            class="form__textarea-input"
+            rows="8"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div id="survey-form-group" class="form__group">
+          <button id="submit" class="btn btn--purple">submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
